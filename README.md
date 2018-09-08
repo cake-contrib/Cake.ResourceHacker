@@ -19,7 +19,7 @@ Including addin in cake script is easy.
 
 Resource Hacker has to be installed and it's ResourceHacker.exe in path.
 
-To use the addin just add it to Cake call the aliases and configure any settings you want.
+To use the addin add it to Cake call the aliases and configure any settings you want.
 
 ```csharp
 #addin "Cake.ResourceHacker"
