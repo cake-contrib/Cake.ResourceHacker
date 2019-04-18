@@ -8,7 +8,9 @@ A Cake AddIn that extends Cake with [ResourceHacker](http://angusj.com/resourceh
 
 ## Important
 
-Supports Cake 0.30 and .NET Standard 2.0.
+1.1.0 Supports Cake 0.33
+
+1.0.0 Supports Cake 0.30 and .NET Standard 2.0.
 
 ## Including addin
 Including addin in cake script is easy.
