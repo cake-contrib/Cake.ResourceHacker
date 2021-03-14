@@ -34,6 +34,6 @@ namespace Cake.ResourceHacker.Tests
             }
         }
 
-        static string GetAbsolutePath(FilePath file) => $"{ResourceHackerFixture.Root}/{file.FullPath}";
+        static string GetAbsolutePath(FilePath file) => $"/Working/{file.FullPath}";
     }
 }

@@ -1,8 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
+    <TargetFrameworks>net50;netstandard2.0;net46</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <CodeAnalysisRuleSet></CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Cake.ResourceHacker</PackageId>
+    <Title>Cake.ResourceHacker</Title>
+    <Description>ResourceHacker Addin for Cake Build.</Description>
+    <PackageTags>Cake Script ResourceHacker cake-addin</PackageTags>
+    <Authors>Miha Markic</Authors>
+    <Owners>Miha Markic, cake-contrib</Owners>
+    <RepositoryUrl>https://github.com/cake-contrib/Cake.ResourceHacker.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/cake-contrib/Cake.ResourceHacker</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <!-- for compatibility only -->
+    <PackageIconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</PackageIconUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">

@@ -12,11 +12,9 @@ namespace Cake.ResourceHacker.Tests.Apps.Create
     public class ResourceHackerFixture : ToolFixture<ResourceHackerSettings>, ICakeContext
     {
         public const string Root = "C:/Temp";
-        public string Path { get; set; }
-        IFileSystem fileSystem;
-        ICakeEnvironment environment;
-        IFileSystem ICakeContext.FileSystem => fileSystem;
-        ICakeEnvironment ICakeContext.Environment => environment;
+        public string[] Services { get; set; } = new string[0];
+        IFileSystem ICakeContext.FileSystem => FileSystem;
+        ICakeEnvironment ICakeContext.Environment => Environment;
         public ICakeLog Log => Log;
         ICakeArguments ICakeContext.Arguments => throw new NotImplementedException();
         IProcessRunner ICakeContext.ProcessRunner => ProcessRunner;
@@ -25,15 +23,6 @@ namespace Cake.ResourceHacker.Tests.Apps.Create
         ICakeConfiguration ICakeContext.Configuration => throw new NotImplementedException();
         public ResourceHackerFixture(): base("ResourceHacker")
         {
-            Tools = Substitute.For<IToolLocator>();
-            fileSystem = Substitute.For<IFileSystem>();
-            environment = Substitute.For<ICakeEnvironment>();
-            var toolPath = new FilePath("ResourceHacker");
-            var file = Substitute.For<IFile>();
-            file.Exists.Returns(true);
-            fileSystem.GetFile(toolPath).Returns(file);
-            environment.WorkingDirectory.Returns(Root);
-            Tools.Resolve("ResourceHacker").Returns(toolPath);
             ProcessRunner.Process.SetStandardOutput(new string[] { });
         }
         protected override void RunTool()
