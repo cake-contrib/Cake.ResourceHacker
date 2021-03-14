@@ -6,7 +6,7 @@ BuildParameters.SetParameters(
     context: Context, 
     buildSystem: BuildSystem,
     sourceDirectoryPath: "./src",
-    title: "Cake.Cake Script ResourceHacker",
+    title: "Cake.ResourceHacker",
     repositoryOwner: "cake-contrib",
     repositoryName: "Cake.ResourceHacker",
     appVeyorAccountName: "cakecontrib",
