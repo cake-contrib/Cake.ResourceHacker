@@ -4,9 +4,19 @@ A Cake AddIn that extends Cake with [ResourceHacker](http://angusj.com/resourceh
 
 [![cakebuild.net](https://img.shields.io/badge/WWW-cakebuild.net-blue.svg)](http://cakebuild.net/)
 [![NuGet](https://img.shields.io/nuget/v/Cake.ResourceHacker.svg)](https://www.nuget.org/packages/Cake.ResourceHacker)
-[![Build status](https://ci.appveyor.com/api/projects/status/vi07dth3d1gek7ak?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-resourcehacker)
+
+|Branch|Status|
+|------|------|
+|Master|[![Build status](https://ci.appveyor.com/api/projects/status/github/cake-contrib/Cake.ResourceHacker?branch=master&svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-resourcehacker)|
+|Develop|[![Build status](https://ci.appveyor.com/api/projects/status/github/cake-contrib/Cake.ResourceHacker?branch=develop&svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-resourcehacker)|
+
 
 ## Important
+
+1.3.0
+* References Cake 4.0.0
+* Drops support for .NET Framework
+* Supports .net 6+
 
 1.1.0 Supports Cake 0.33
 
@@ -39,6 +49,14 @@ Other commands follow same convention.
 
 This version is built against ResourceHacker 5.1.6.
 
+## Discussion
+
+If you have questions, search for an existing one, or create a new discussion on the Cake GitHub repository, using the `extension-q-a` category.
+
+[![Join in the discussion on the Cake repository](https://img.shields.io/badge/GitHub-Discussions-green?logo=github)](https://github.com/cake-build/cake/discussions/categories/extension-q-a)
+
 ## Credits
 
-Brought to you by [Miha Markic](https://github.com/MihaMarkic) ([@MihaMarkic](https://twitter.com/MihaMarkic/)) and contributors.
+Brought to you by [Miha Markic](https://github.com/MihaMarkic) and contributors. 
+
+![Mastodon Follow](hts://github.com/MihaMarkic) ([@MihaMarkic](https://twitter.com/MihaMarkic/)) and contributors.
