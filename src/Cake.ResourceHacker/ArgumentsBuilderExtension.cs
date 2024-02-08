@@ -10,12 +10,12 @@ namespace Cake.ResourceHacker
     public static class ArgumentsBuilderExtension
     {
         /// <summary>
-        /// Appends all arguments from <paramref name="settings"/> and <paramref name="arguments"/>.
+        /// Appends all arguments from <paramref name="settings"/>.
         /// </summary>
         /// <param name="builder"></param>
+        /// <param name="cakeEnvironment"></param>
         /// <param name="command"></param>
         /// <param name="settings">The settings.</param>
-        /// <param name="arguments"></param>
         public static void AppendAll(this ProcessArgumentBuilder builder, ICakeEnvironment cakeEnvironment, string command, ResourceHackerSettings settings)
         {
             if (builder == null)
@@ -36,10 +36,9 @@ namespace Cake.ResourceHacker
         /// <summary>
         /// Appends pre or post command arguments.
         /// </summary>
-        /// <typeparam name="TSettings"></typeparam>
         /// <param name="builder"></param>
+        /// <param name="cakeEnvironment"></param>
         /// <param name="settings"></param>
-        /// <param name="preCommand"></param>
         public static void AppendArguments(ProcessArgumentBuilder builder, ICakeEnvironment cakeEnvironment, ResourceHackerSettings settings)
         {
             AppendFilePathIfNotNull(builder, cakeEnvironment, "open", settings.Open);
@@ -54,7 +53,7 @@ namespace Cake.ResourceHacker
             }
         }
 
-        static void AppendFilePathIfNotNull(ProcessArgumentBuilder builder, ICakeEnvironment cakeEnvironment, string name, FilePath path)
+        static void AppendFilePathIfNotNull(ProcessArgumentBuilder builder, ICakeEnvironment cakeEnvironment, string name, FilePath? path)
         {
             if (path != null)
             {

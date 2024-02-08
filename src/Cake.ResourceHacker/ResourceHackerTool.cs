@@ -9,7 +9,6 @@ namespace Cake.ResourceHacker
     /// <summary>
     /// Resource Hacker tool.
     /// </summary>
-    /// <typeparam name="TSettings">The settings type.</typeparam>
     public class ResourceHackerTool : Tool<ResourceHackerSettings>
     {
         readonly ICakeEnvironment environment;
@@ -38,7 +37,6 @@ namespace Cake.ResourceHacker
         /// </summary>
         /// <param name="command">The command.</param>
         /// <param name="settings">The settings.</param>
-        /// <param name="additional">Additional arguments.</param>
         public void Run(string command, ResourceHackerSettings settings)
         {
             if (string.IsNullOrEmpty(command))
