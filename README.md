@@ -1,6 +1,6 @@
 ﻿# Cake.ResourceHacker
 
-A Cake AddIn that extends Cake with [ResourceHacker](http://angusj.com/resourcehacker/) command tools.
+A Cake AddIn that extends Cake with [ResourceHacker](http://angusj.com/resourcehacker/ or [Resource Cracker](https://www.pelock.com/products/resource-cracker)) command tools.
 
 [![cakebuild.net](https://img.shields.io/badge/WWW-cakebuild.net-blue.svg)](http://cakebuild.net/)
 [![NuGet](https://img.shields.io/nuget/v/Cake.ResourceHacker.svg)](https://www.nuget.org/packages/Cake.ResourceHacker)
@@ -29,7 +29,7 @@ Including addin in cake script is easy.
 ```
 ## Usage
 
-Resource Hacker has to be installed and it's ResourceHacker.exe in path.
+Resource Hacker or [Resource Cracker](https://www.pelock.com/products/resource-cracker) has to be installed and it's ResourceHacker.exe in path.
 
 To use the addin add it to Cake call the aliases and configure any settings you want.
 
